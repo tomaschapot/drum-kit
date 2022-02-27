@@ -1,3 +1,28 @@
+//Buttons
+
+const container = document.querySelector(".container");
+
+const Buttons = container.querySelectorAll("div");
+
+Buttons.forEach((button) => {
+	button.addEventListener("click", () => {
+		const audio = document.querySelector(
+			`audio[data-key = '${button.classList[1]}']`
+		);
+		audio.currentTime = 0;
+		audio.play();
+
+		button.classList.add("focus-letter");
+		button.classList.add("focus-div");
+		setTimeout(() => {
+			button.classList.remove("focus-letter");
+		}, 140);
+		setTimeout(() => {
+			button.classList.remove("focus-div");
+		}, 70);
+	});
+});
+
 window.addEventListener("keydown", function (e) {
 	const audio = document.querySelector(`audio[data-key = '${e.keyCode}']`);
 	const drumLetter = document.querySelector(
