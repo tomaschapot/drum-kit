@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Drum-kit</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="button">
+				<kbd class="drum-button 65">Kick</kbd>
+			</div>
+			<div class="button">
+				<kbd class="drum-button 83">Snare</kbd>
+			</div>
+			<div class="button">
+				<kbd class="drum-button 67">Bass 1</kbd>
+			</div>
+			<div class="button">
+				<kbd class="drum-button 32">Bass 2</kbd>
+			</div>
+			<div class="button">
+				<kbd class="drum-button 72">Bell</kbd>
+			</div>
+			<div class="button">
+				<kbd class="drum-button 74">Shaker</kbd>
+			</div>
+			<div class="button">
+				<kbd class="drum-button 75">Closed Hi-Hat</kbd>
+			</div>
+			<div class="button">
+				<kbd class="drum-button 76">Open Hi-Hat</kbd>
+			</div>
+		</div>
+
+		<audio data-key="75" src="/audio/closed-hihat.wav"></audio>
+		<audio data-key="76" src="audio/open-hihat.wav"></audio>
+		<audio data-key="65" src="/audio/kick.wav"></audio>
+		<audio data-key="83" src="/audio/snare.wav"></audio>
+		<audio data-key="74" src="/audio/shaker.wav"></audio>
+		<audio data-key="72" src="/audio/bell.wav"></audio>
+		<audio data-key="67" src="/audio/bass 1.wav"></audio>
+		<audio data-key="32" src="/audio/bass 2.wav"></audio>
+
+		<script src="main.js"></script>
+	</body>
+</html>

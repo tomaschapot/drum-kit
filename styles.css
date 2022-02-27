@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	align-items: center;
+	height: 100vh;
+	gap: 2px;
+}
+
+.button {
+	width: 10%;
+	height: 15%;
+	text-align: center;
+
+	background-color: rgba(128, 128, 128, 0.253);
+	display: flex;
+	align-items: center;
+}
+
+kbd {
+	margin: 0 auto;
+	font-family: sans-serif;
+}
